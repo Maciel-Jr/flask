@@ -29,7 +29,7 @@ def integral(quantidade, ativoResposta=False, AtivoLimite=False):
         else:
             mensagem = {
                 'Funcoes': resultado[0],
-                'Resultado': resultado[1]
+                'Resultados': resultado[1]
             }
     else:
         if AtivoLimite == True:
