@@ -7,9 +7,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, origins='*')
 
-@app.route('/Calc', methods=['GET'])
-def CalcFy():
-    return '<a href="http://127.0.0.1:5000/api/integral/Quantidade=1&ativoResposta=False&AtivoLimite=False"><button>Meu Botão</button></a>'
+@app.route('/', methods=['GET'])
+def index():
+    return '<a href=""><button>Meu Botão</button></a>'
 
 @app.route('/api/integral/Quantidade=<quantidade>&ativoResposta=<ativoResposta>&AtivoLimite=<AtivoLimite>', methods=['GET'])
 def integral(quantidade, ativoResposta=False, AtivoLimite=False):
